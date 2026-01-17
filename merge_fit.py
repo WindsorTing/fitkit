@@ -12,12 +12,6 @@ from typing import Dict, Optional
 
 from fit_tool.fit_file import FitFile
 
-
-# FIT_EPOCH = dt.datetime(1989, 12, 31, tzinfo=dt.timezone.utc)
-
-# def fit_ts_to_dt(ts: int) -> dt.datetime:
-#     return FIT_EPOCH + dt.timedelta(seconds=int(ts))
-
 def _as_dt(x: Union[int, float, dt.datetime, None]) -> Optional[dt.datetime]:
     """
     Convert Unix epoch milliseconds → UTC datetime.
